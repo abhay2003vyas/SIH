@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/@webpixels/css@1.0/dist/index.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    .card-group {
+      display: flex;
+      height: 715px;
+      width: 637px;
+      padding-bottom: 64px;
+      margin-left: 20px;
+      flex-flow: row wrap;
+      margin-top: 29px;
+    }
+
+    .table-container table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .table-container th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .table-container th {
+      background-color: #f2f2f2;
+    }
+
+    /* Apply alternate background color to even rows */
+    .table-container tbody tr:nth-child(even) {
+      background-color: #a8f79d;
+    }
+
+    .table-container th {
+      background-color: #a8f79d;
+    }
+
+    /* Container for the table, float it to the right */
+    .table-container {
+      float: right;
+      margin-right: 20px;
+      width: 805px;
+      margin-top: -726px;
+      height: 230px;
+    }
+
+    .table-container th[colspan="2"] {
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    /* Pagination styles */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .page-link {
+      padding: 8px 16px;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: 1px solid #4CAF50;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .nav {
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-top: 4px;
+      color: #f8faff;
+      text-decoration: none;
+    }
+
+    .nav:hover {
+      color: #ffffff;
+      /* Set the hover color to your desired value */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="image-container">
+    <div class="image-item">
+      <img src="img/1.png" alt="Image 1" style="height: auto; width: 63px;margin: 10px 0px 0px 20px;">
+    </div>
+    <div class="image-item">
+      <img src="img/2.png" alt="Image 2" style="margin: 15px 0px 0px -200px;">
+    </div>
+    <div style="margin-left: -200px; margin-right: -50px;     text-align: center;
+    padding-top: 10px;
+    color: rgb(0, 92, 191);">
+      <h1 style="font-size: 50px;color: rgb(0, 92, 191);text-align: center  ;">JalSaksham Portal</h1>
+      <h2 style="font-size: 20px;color: rgb(35, 37, 38);text-align: center  ;text-decoration: underline;">जल से सशक्ति,
+        समृद्धि की ओर
+      </h2>
+    </div>
+    <div class="image-item" style="margin-right: -100px;">
+      <img src="img/3.png" alt="Image 4" style="margin: 15px 100px 0px 60px;">
+    </div>
+    <div class="image-item" style="margin-top: -40px;margin-right:100px ;">
+      <img src="img/4.png" alt="Image 4" style="margin: 15px 50px 0px 50px;">
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-0 py-3">
+    <div class="container-xl">
+      <!-- Logo -->
+      <!-- Navbar toggle -->
+      <div class="collapse navbar-collapse" id="navbarCollapse"  >
+        <!-- Nav -->
+        <div class="navbar-nav mx-lg-auto">
+          <a class="nav-item nav" href="index.html" aria-current="page"><ion-icon name="home-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>HOME</a>
+          <a class="nav-item nav" href="#"><ion-icon name="people-sharp"
+              style="margin-right: 5px;margin-top:4px;"></ion-icon>ABOUT</a></a>
+          <a class="nav-item nav" href="#"><ion-icon name="receipt-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>REPORTS</a>
+          <a class="nav-item nav" href="dashboard.php"><ion-icon name="people-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>DASHBOARD</a>
+          <a class="nav-item nav" href="rec.html"><ion-icon name="thumbs-up-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>RECOMMENDATION</a>
+          <a class="nav-item nav" href="#"><ion-icon name="chatbox-ellipses-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>FEEDBACK</a>
+          <a class="nav-item nav" href="#"><ion-icon name="call-sharp"
+              style="margin-right: 5px;margin-top: 4px;"></ion-icon>CONTACT US</a>
+        </div>
+        <!-- Right navigation -->
+        <div class="navbar-nav ms-lg-4">
+          <a class="nav-item nav" href="login.php"><ion-icon name="log-in-outline"
+              style="margin-right: 10px;height: 20px;width: 20px;margin-bottom: -5px;"></ion-icon>LOGIN</a>
+        </div>
+        <!-- Action -->
+        <div class="d-flex align-items-lg-center mt-3 mt-lg-0">
+          <a href="signup.php" class="btn btn-sm btn-primary w-full w-lg-auto">
+            <ion-icon name="person-outline" style="margin-right: 5px;margin-bottom: -2px;"></ion-icon>Register
+          </a>
+        </div  >
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <div class="card-group">
+    <div class="card m-2">
+      <div class="card-header text-white" style="background-color: #42b3e5">
+        <ul class="nav">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;"><i class="fas fa-thumb"
+              style="margin-right: 10px;"></i>Recommendations</a>
+        </ul>
+      </div>
+      <div class="card-body" style="overflow-y: auto; height: 300px; padding-top: 20;">
+        <div class="tabs-wrapper tab-content">
+          <div class="tab-pane active" id="alert">
+            <div class="col indexAlertContent">
+              <marquee direction="left" behavior="scroll" scrollamount="5" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                <ul class="list-group list-group-flush" id="alert-vertical">
+                  <div class="container">
+                    <div class="ticker">
+                      <p>
+                        <li class="list-group-item alert">
+                          <i class="fas fa-hand-point-right"
+                            style="color: #f30606; font-size: 24px; margin-right: 10px;"></i>
+                          <a href="https://nmsa.dac.gov.in/"
+                            style="font-weight: bold; font-style: italic; font-size: 18px; color: #5050ff; text-decoration: underline;">
+                            National Mission for Sustainable Agriculture (NMSA): Promote sustainable agriculture
+                            practices,<br>
+                            enhance productivity, and ensure the integrated development of farming systems.
+                        </li>
+                        <hr style="margin: 5px 0;"> <!-- Line display as a differentiator -->
+
+                        <li class="list-group-item alert">
+                          <i class="fas fa-hand-point-right"
+                            style="color: #f30606; font-size: 24px; margin-right: 10px;"></i>
+                          <a href="https://hortnet.gov.in/NHMhome_new.aspx"
+                            style="font-weight: bold; font-style: italic; font-size: 18px; color: #5050ff; text-decoration: underline;">
+                            National Horticulture Mission (NHM): Boost horticulture production, improve nutritional<br>
+                            security, and enhance income opportunities for farmers
+                        </li>
+                        <hr style="margin: 5px 0;">
+
+                        <li class="list-group-item alert">
+                          <i class="fas fa-hand-point-right"
+                            style="color: #f30606; font-size: 24px; margin-right: 10px;"></i>
+                          <a href="https://aajeevika.gov.in/about/introduction"
+                            style="font-weight: bold; font-style: italic; font-size: 18px; color: #5050ff; text-decoration: underline;">
+                            National Rural Livelihoods Mission (NRLM): Alleviate rural poverty by creating
+                            sustainable<br>
+                            livelihood opportunities and promoting financial inclusion.
+                        </li>
+                        <hr style="margin: 5px 0;">
+
+                        <li class="list-group-item alert">
+                          <i class="fas fa-hand-point-right"
+                            style="color: #f30606; font-size: 24px; margin-right: 10px;"></i>
+                          <a href="https://www.mudra.org.in/"
+                            style="font-weight: bold; font-style: italic; font-size: 18px; color: #5050ff; text-decoration: underline;">
+                            Pradhan Mantri Mudra Yojana (PMMY): Facilitate access to finance for small businesses
+                            and<br>
+                            entrepreneurs, promoting self-employment and job creation.
+                        </li>
+                        <hr style="margin: 5px 0;">
+
+                        <li class="list-group-item alert">
+                          <i class="fas fa-hand-point-right"
+                            style="color: #f30606; font-size: 24px; margin-right: 10px;"></i>
+                          <a href="https://www-india-gov-in.translate.goog/spotlight/deen-dayal-upadhyaya-grameen-kaushalya-yojana?_x_tr_sl=en&_x_tr_tl=hi&_x_tr_hl=hi&_x_tr_pto=tc"
+                            style="font-weight: bold; font-style: italic; font-size: 18px; color: #5050ff; text-decoration: underline;">
+                            Deen Dayal Upadhyaya Grameen Kaushalya Yojana (DDU-GKY): Skill rural youth to enable them
+                            to<br>
+                            secure a better livelihood, fostering economic empowerment and inclusive growth.
+                          </a>
+                        </li>
+                        <hr style="margin: 5px 0;">
+                      </p>
+                    </div>
+                  </div>
+                </ul>
+              </marquee>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <!-- Use colspan to merge cells in the heading row -->
+      <thead>
+        <tr>
+          <th colspan="2">State-wise Preferred Alternate Income Generation Activites</th>
+        </tr>
+        <tr>
+          <th>State</th>
+          <th>Suitable Activities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>Horticulture: (3.86/5), Poultry Farming: (3.14/5), Sericulture: (2.71/5)</td>
+        </tr>
+        <tr>
+            <td>Arunachal Pradesh</td>
+            <td>Horticulture: (3.86/5), Handicrafts:(3.5/5), Apiculture:(3.43/5)
+            </td>
+        </tr>
+        <tr>
+            <td>Assam</td>
+            <td>Tea Plantation: (3.29/5), Sericulture: (3/5), Horticulture: (4/5)</td>
+        </tr>
+        <tr>
+            <td>Bihar</td>
+            <td>Vegetable Farming: (3.43/5), Dairy Farming: (3.29/5), Handicrafts: (2.57/5)</td>
+        </tr>
+        <tr>
+            <td>Chhattisgarh</td>
+            </td>
+            <td>Rice Farming: (3.43/5), Floriculture: (2.71/5), Handicrafts: (2.43/5)</td>
+            </td>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>Horticulture: (4.14/5), Agro-Processing: (3.86/5), Handicrafts: (2.43/5) </td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Gujarat</td>
+            <td>Horticulture: (3.71/5), Agro-Processing: (3.29/5), Fisheries: (2.71/5)</td>
+        </tr>
+        <tr>
+            <td>Haryana</td>
+            <td>Dairy Farming: (3.57/5), Horticulture: (4/5), Agro-Processing: (3.43/5)</td>
+        </tr>
+        <tr>
+            <td>Himachal Pradesh</td>
+            <td>Apple Orchards: (4.43/5), Horticulture:(4.29/5), Handicrafts: (3.5/5)</td>
+        </tr>
+        <tr>
+            <td>Jharkhand</td>
+            <td>Handicrafts: (3.5/5), Poultry Farming: (3.33/5), Vegetable Farming: (3.29/5)</td>
+        </tr>
+        <tr>
+            <td>Karnataka</td>
+            <td> Floriculture: (3.71/5), Animal Husbandry: (3.29/5), Agri-Tourism: (3.14/5)</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>Coconut Farming: (3.71/5), Spices Cultivation: (4.14/5), Fisheries:N/A (Not applicable for direct comparison)
+        </tr>
+        <tr>
+            <td>Madhya Pradesh</td>
+            <td>Agro-Processing:(3.57/5), Dairy Farming:(3.29/5), Soybean Farming:(3.14/5)</td>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>Dairy Farming:(4.14/5), Agro-Processing: (3.57/5), Beekeeping:(3.57/5)</td>
+        </tr>
+        <tr>
+            <td>Manipur</td>
+            <td>Handicrafts: (4/5), Horticulture:(3.86/5), Poultry Farming:(3.33/5)</td>
+        </tr>
+        <tr>
+            <td>Meghalaya</td>
+            <td>Horticulture: (3.86/5), Dairy Farming: (3.29/5), Sericulture: (2.71/5)</td>
+        </tr>
+        <tr>
+            <td>Mizoram</td>
+            <td>Horticulture: (3.86/5), Handicrafts: (3.5/5), Sericulture: (3/5)</td>
+        </tr>
+        <tr>
+            <td>Nagaland</td>
+            <td>Horticulture: (3.86/5), Handicrafts:(3.5/5), Poultry Farming:(2.75/5)</td>
+        </tr>
+        <tr>
+            <td>Odisha</td>
+            <td>Rice Farming: (3.57/5), Fisheries: (3/5), Handicrafts: (3/5)</td>
+        </tr>
+        <tr>
+            <td>Punjab</td>
+            <td>Horticulture: (3.86/5), Wheat and Rice Farming: (3.71/5), Dairy Farming: (3.57/5)</td>
+        </tr>
+        <tr>
+            <td>Rajasthan</td>
+            <td>Handicrafts: (4.5/5), Horticulture: (3.86/5), Animal Husbandry: (3.29/5)</td>
+        </tr>
+        <tr>
+            <td>Sikkim</td>
+            <td>Organic Farming: (4.57/5), Floriculture:(4/5), Handicrafts: (3/5)</td>
+        </tr>
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>Agro-Processing: (3.43/5), Sericulture: (3/5), Poultry Farming: (3/5)</td>
+        </tr>
+        <tr>
+            <td>Telangana</td>
+            <td>Horticulture: (4.14/5), Agro-Processing: (3.29/5), Poultry Farming: (3.14/5)</td>
+        </tr>
+        <tr >
+            <td>Tripura</td>
+            <td>Horticulture: (3.86/5), Rubber Plantation: (3.29/5), Handicrafts: (3/5)</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>Dairy Farming: (3.5/5), Agro-Processing: (3.5/5), Handicrafts: (2.5/5)</td>
+        </tr>
+        <tr>
+            <td>Uttarakhand</td>
+            <td>Horticulture: (4.14/5), Apiculture (Beekeeping): (3.57/5), Handicrafts: (3.5/5)</td>
+        </tr>
+        <tr>
+            <td>West Bengal</td>
+            <td>Horticulture: (4/5), Fisheries: (3.29/5), Handicrafts: (2.57/5)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">
+            <!-- Pagination links for page 1 -->
+            <div class="pagination">
+              <a class="page-link" onclick="showPage(1)">1</a>
+              <a class="page-link" onclick="showPage(2)">2</a>
+              <a class="page-link" onclick="showPage(3)">3</a>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <script>
+    // JavaScript for pagination
+    function showPage(pageNumber) {
+      const rowsPerPage = 10; // Adjust as needed
+      const rows = document.querySelectorAll('.table-container tbody tr');
+
+      rows.forEach((row, index) => {
+        // Calculate the range of rows for the selected page
+        const start = (pageNumber - 1) * rowsPerPage;
+        const end = pageNumber === 3 ? rows.length : pageNumber * rowsPerPage;
+
+        if (index >= start && index < end) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Show the first page by default
+    showPage(1);
+  </script>
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.umd.min.js">
+    // Initialization for ES Users
+    import { Carousel, initMDB } from "mdb-ui-kit";
+
+    initMDB({ Carousel });
+  </script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
